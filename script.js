@@ -397,8 +397,4 @@ surpriseMessage.addEventListener('click', function() {
             console.error("Manual play failed:", e);
         });
     }
-
 });
-
-
-

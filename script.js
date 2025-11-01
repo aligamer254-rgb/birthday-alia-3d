@@ -312,7 +312,7 @@ animate();
 // ===========================================
 
 // التاريخ الجديد للاختبار (يتم تعديله في كل مرة للاختبار)
-const birthdayDate = new Date("November 2, 2025 01:02:00").getTime();
+const birthdayDate = new Date("November 2, 2025 01:31:00").getTime();
 
 function updateCountdown() {
     const now = new Date().getTime();
@@ -397,4 +397,5 @@ surpriseMessage.addEventListener('click', function() {
             console.error("Manual play failed:", e);
         });
     }
+
 });

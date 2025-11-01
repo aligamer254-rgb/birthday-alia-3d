@@ -1,0 +1,126 @@
+/* تنسيق عام لصفحة الويب */
+body {
+    margin: 0;
+    overflow: hidden; 
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: #000000; 
+}
+
+/* حاوية المشهد 3D (تغطي الشاشة) */
+#container-3d {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+    transition: opacity 1.5s ease-out; 
+}
+
+/* واجهة العداد (فوق المشهد 3D) */
+#overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    z-index: 10; 
+    padding: 20px 40px; 
+    background: rgba(0, 0, 0, 0.6); 
+    border-radius: 25px; 
+    box-shadow: 0 0 30px rgb(10, 10, 136), 0 0 50px rgba(255, 204, 0, 0.4); /* تأثير النيون */
+    backdrop-filter: blur(8px); 
+    transition: opacity 0.5s ease-in-out; 
+}
+
+h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    text-shadow: 0 0 15px #fff, 0 0 20px #ffcc00; 
+}
+
+/* تنسيق عداد الزمن العادي */
+#countdown-display {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+    margin: 20px 0;
+}
+
+#countdown-display span {
+    font-size: 5em; 
+    font-weight: 900; 
+    color: #ffcc00; 
+    display: block;
+    line-height: 1;
+    text-shadow: 0 0 5px #000;
+}
+
+#countdown-display small {
+    display: block;
+    font-size: 1.5em; 
+    color: #ccc;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.8em;
+    color: #ff6600;
+    font-weight: 600;
+}
+
+/* حالة الاختفاء */
+.hidden {
+    display: none !important;
+    opacity: 0;
+}
+
+/* تنسيق المفاجأة النهائية */
+#surprise-message {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    /* تثبيت التمركز الأفقي والعمودي بالرغم من الحركة */
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    z-index: 1000; 
+    background: rgba(16, 16, 17, 0.466);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 50px 10px rgb(40, 9, 177);
+    color: #333;
+    opacity: 0; 
+    transition: opacity 1s ease-in;
+}
+
+#surprise-message.visible {
+    opacity: 1;
+}
+
+#cake-image {
+    width: 90%; 
+    max-width: 400px;
+    border-radius: 15px;
+    margin: 15px 0;
+    border: 5px solid rgba(35, 14, 231, 0.308);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+#surprise-message h2 {
+    color: #0375df; 
+    font-size: 4em;
+    text-shadow: 1px 1px 3px #000;
+}
+
+/* تنسيق الأرقام الـ 3D المتحركة (لآخر 5 ثوانٍ) */
+.countdown-3d-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #1907b6;
+    font-size: 12em;
+    font-weight: 900;
+    z-index: 15; 
+    text-shadow: 0 0 20px #ff2600, 0 0 30px rgba(64, 10, 211, 0.5); 
+}

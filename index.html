@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 عيد ميلاد سعيد يا علياء! المفاجأة قادمة... 🎉</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="container-3d"></div>
+
+    <div id="overlay">
+        <h1> الوقت المتبقي لأكتمال القمر...🌑</h1>
+        <div id="countdown-display">
+            <span id="days">00</span><small>يوم</small>
+            <span id="hours">00</span><small>ساعة</small>
+            <span id="minutes">00</span><small>دقيقة</small>
+            <span id="seconds">00</span><small>ثانية</small>
+        </div>
+        <p>...🌑</p>
+    </div>
+
+    <div id="surprise-message" class="hidden">
+        <h2> علياء </h2>
+        <img src="images/aliyah_cake.png" alt="كعكة عيد ميلاد علياء" id="cake-image">
+        <p class="final-wish">كل عام وإنتِ بخير يا أغلى صديقة 
+وجودك بحياتي نعمة، وربي ما يحرمني منك ويطول بعمرج .
+
+عسى أيّامك تبارك وتزيد فرح ونجاح،
+وقد طيبة قلبك يا ألطف من مر بحياتي 
+
+هابي بيرثدي يا جميلة 🎂💗</p>
+        
+        <p id="play-prompt" style="color:rgb(230, 1, 1); font-size: 1.2em; cursor: pointer; animation: pulse 1.5s infinite;">
+            (اضغطي هنا يروحي 🎶)
+        </p>
+
+        <audio id="birthday-song" src="audio/happy_birthday.mp3" preload="auto"></audio>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
